@@ -25,7 +25,6 @@ import json
 import socket
 import traceback
 from threading import Thread
-import zlib
 import obelisk
 import network_util
 import zmq
@@ -831,9 +830,6 @@ class CryptoTransportLayer(TransportLayer):
 
     def _on_raw_message(self, serialized):
         try:
-
-            # Decompress message
-            serialized = zlib.decompress(serialized)
 
             msg = json.loads(serialized)
             self.log.info("Message Received [%s]" % msg.get('type', 'unknown'))

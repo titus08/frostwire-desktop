@@ -6,7 +6,6 @@ from crypto_util import hexToPubkey
 import logging
 import pyelliptic as ec
 import socket
-import zlib
 import obelisk
 import zmq
 import errno
@@ -49,8 +48,6 @@ class PeerConnection(object):
 
     def send_raw(self, serialized, callback=lambda msg: None):
 
-        compressed_data = zlib.compress(serialized, 9)
-
         try:
             s = self.create_zmq_socket()
             try:
@@ -62,7 +59,7 @@ class PeerConnection(object):
                 s.connect(self.address)
 
             stream = zmqstream.ZMQStream(s, io_loop=ioloop.IOLoop.current())
-            stream.send(compressed_data)
+            stream.send(serialized)
 
             def cb(stream, msg):
                 response = json.loads(msg[0])

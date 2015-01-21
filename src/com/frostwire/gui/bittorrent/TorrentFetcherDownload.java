@@ -142,15 +142,7 @@ public class TorrentFetcherDownload implements BTDownload {
         return "";
     }
 
-    public boolean isDeleteTorrentWhenRemove() {
-        return false;
-    }
-
     public void setDeleteTorrentWhenRemove(boolean deleteTorrentWhenRemove) {
-    }
-
-    public boolean isDeleteDataWhenRemove() {
-        return false;
     }
 
     public void setDeleteDataWhenRemove(boolean deleteDataWhenRemove) {
@@ -174,10 +166,6 @@ public class TorrentFetcherDownload implements BTDownload {
 
     public boolean isPartialDownload() {
         return false;
-    }
-
-    public long getSize(boolean update) {
-        return -1;
     }
 
     @Override

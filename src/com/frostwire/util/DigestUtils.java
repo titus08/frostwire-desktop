@@ -11,9 +11,6 @@ import java.math.BigInteger;
 import java.security.MessageDigest;
 
 public class DigestUtils {
-    public final static boolean checkMD5(File f, String expectedMD5) {
-        return checkMD5(f, expectedMD5, null);
-    }
 
     /**
      * Returns true if the MD5 of the file corresponds to the given MD5 string.

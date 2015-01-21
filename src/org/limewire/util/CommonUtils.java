@@ -15,6 +15,8 @@
 
 package org.limewire.util;
 
+import org.apache.commons.io.IOUtils;
+
 import java.io.Closeable;
 import java.io.File;
 import java.io.FileInputStream;
@@ -253,28 +255,6 @@ public class CommonUtils {
             time.append("0");
         time.append(Long.toString(seconds));
         return time.toString();
-    }
-
-    /**
-     * Returns a normalized and shortened valid file name taking the length
-     * of the path of the parent directory into account.
-     * 
-     * The name is cleared from illegal filesystem characters and it is ensured
-     * that the maximum path system on the system is not exceeded unless the 
-     * parent directory path has already the maximum path length.
-     *
-     * @param parentDir
-     * @param name
-     * @throws IOException if the parent directory's path takes up 
-     * {@link OSUtils#getMaxPathLength()}.
-     * @return
-     */
-    public static String convertFileName(File parentDir, String name) throws IOException {
-        int parentLength = parentDir.getAbsolutePath().getBytes(Charset.defaultCharset().name()).length;
-        if (parentLength >= OSUtils.getMaxPathLength() - 1 /* for the separator char*/) {
-            throw new IOException("Path too long");
-        }
-        return convertFileName(name, Math.min(OSUtils.getMaxPathLength() - parentLength - 1, 180));
     }
 
     /**
@@ -616,7 +596,7 @@ public class CommonUtils {
             } catch (Exception e) {
                 e.printStackTrace();
             } finally {
-                closeQuietly(fis);
+                IOUtils.closeQuietly(fis);
             }
         }
 
@@ -684,15 +664,5 @@ public class CommonUtils {
 //            IS_PORTABLE = !metaConfiguration.isEmpty();
 //        }
         return false;//IS_PORTABLE;
-    }
-
-    public static void closeQuietly(Closeable closeable) {
-        try {
-            if (closeable != null) {
-                closeable.close();
-            }
-        } catch (IOException ioe) {
-            // ignore
-        }
     }
 }

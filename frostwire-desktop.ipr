@@ -172,6 +172,7 @@
         <w>bencode</w>
         <w>bittorrent</w>
         <w>gubatron</w>
+        <w>streamable</w>
       </words>
     </dictionary>
   </component>
@@ -205,4 +206,3 @@
     </library>
   </component>
 </project>
-

@@ -1,16 +1,16 @@
 # Romanian translations for PACKAGE package.
 # Copyright (C) 2007 THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# Automatically generated, 2007.
 #
+# Automatically generated, 2007, 2015.
 msgid ""
 msgstr ""
 "Project-Id-Version: frostwire\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-12-07 13:20-0500\n"
-"PO-Revision-Date: 2015-01-26 12:28+0200\n"
-"Last-Translator: Angelescu Constantin <titus0818@yahoo.com>\n"
-"Language-Team: Angelescu Constantin <titus0818@yahoo.com>\n"
+"PO-Revision-Date: 2015-10-06 12:16+0300\n"
+"Last-Translator: k1404\n"
+"Language-Team: Romanian <>\n"
 "Language: ro\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n == 1 ? 0: (((n % 100 > 19) || ((n % 100 "
 "== 0) && (n != 0))) ? 2: 1));\n"
 "X-Launchpad-Export-Date: 2008-08-12 01:30+0000\n"
-"X-Generator: Poedit 1.5.4\n"
+"X-Generator: Lokalize 1.5\n"
 
 #: /Users/gubatron/workspace.frostwire/frostwire-desktop/src/com/frostwire/gui/HideExitDialog.java:57
 msgid "Do you want to hide FrostWire?"
@@ -34,7 +34,7 @@ msgstr "În acest fel transferul fișierelor poate continua în fundal."
 
 #: /Users/gubatron/workspace.frostwire/frostwire-desktop/src/com/frostwire/gui/HideExitDialog.java:79
 msgid "Don't show this again"
-msgstr "Nu mai afișa acest mesaj din nou"
+msgstr "Nu mai afișa din nou"
 
 #. hide button
 #: /Users/gubatron/workspace.frostwire/frostwire-desktop/src/com/frostwire/gui/HideExitDialog.java:88
@@ -329,12 +329,12 @@ msgstr "Progres"
 #: /Users/gubatron/workspace.frostwire/frostwire-desktop/src/com/frostwire/gui/bittorrent/BTDownloadDataLine.java:144
 #: /Users/gubatron/workspace.frostwire/frostwire-desktop/src/com/frostwire/gui/bittorrent/BTDownloadDataLine.java:359
 msgid "Downloaded"
-msgstr "Descărcate"
+msgstr "Descărcat"
 
 #: /Users/gubatron/workspace.frostwire/frostwire-desktop/src/com/frostwire/gui/bittorrent/BTDownloadDataLine.java:147
 #: /Users/gubatron/workspace.frostwire/frostwire-desktop/src/com/frostwire/gui/bittorrent/BTDownloadDataLine.java:360
 msgid "Uploaded"
-msgstr "Încărcate"
+msgstr "Încărcat"
 
 #: /Users/gubatron/workspace.frostwire/frostwire-desktop/src/com/frostwire/gui/bittorrent/BTDownloadDataLine.java:153
 #: /Users/gubatron/workspace.frostwire/frostwire-desktop/src/com/frostwire/gui/bittorrent/BTDownloadDataLine.java:357
@@ -355,7 +355,7 @@ msgstr "Timp"
 #: /Users/gubatron/workspace.frostwire/frostwire-desktop/src/com/limegroup/gnutella/gui/search/SearchOptionsPanel.java:152
 #: /Users/gubatron/workspace.frostwire/frostwire-desktop/src/com/limegroup/gnutella/gui/search/SearchTableColumns.java:38
 msgid "Seeds"
-msgstr "Contribuiri"
+msgstr "Contribuitori"
 
 #: /Users/gubatron/workspace.frostwire/frostwire-desktop/src/com/frostwire/gui/bittorrent/BTDownloadDataLine.java:168
 #: /Users/gubatron/workspace.frostwire/frostwire-desktop/src/com/frostwire/gui/bittorrent/BTDownloadDataLine.java:361
@@ -368,11 +368,11 @@ msgstr "Raport partajare"
 
 #: /Users/gubatron/workspace.frostwire/frostwire-desktop/src/com/frostwire/gui/bittorrent/BTDownloadDataLine.java:174
 msgid "Seeds/Peers"
-msgstr "Contribuiri/Parteneri"
+msgstr "Contribuitori/Parteneri"
 
 #: /Users/gubatron/workspace.frostwire/frostwire-desktop/src/com/frostwire/gui/bittorrent/BTDownloadDataLine.java:177
 msgid "Started On"
-msgstr "Pornite"
+msgstr "Pornite din"
 
 #: /Users/gubatron/workspace.frostwire/frostwire-desktop/src/com/frostwire/gui/bittorrent/BTDownloadDataLine.java:180
 #: /Users/gubatron/workspace.frostwire/frostwire-desktop/src/com/frostwire/gui/library/LibraryFilesTableDataLine.java:348
@@ -627,11 +627,11 @@ msgstr "Configurați viteza de încărcare"
 
 #: /Users/gubatron/workspace.frostwire/frostwire-desktop/src/com/frostwire/gui/bittorrent/BTDownloadMediatorAdvancedMenuFactory.java:454
 msgid "Edit Trackers"
-msgstr "Editare trakere"
+msgstr "Editare trackere"
 
 #: /Users/gubatron/workspace.frostwire/frostwire-desktop/src/com/frostwire/gui/bittorrent/BTDownloadMediatorAdvancedMenuFactory.java:470
 msgid "Update Tracker"
-msgstr "Actualizare trakere"
+msgstr "Actualizare trackere"
 
 #: /Users/gubatron/workspace.frostwire/frostwire-desktop/src/com/frostwire/gui/bittorrent/BTDownloadMediatorAdvancedMenuFactory.java:491
 msgid "Scrape Tracker"
@@ -639,7 +639,7 @@ msgstr "Răzuiește trackerul"
 
 #: /Users/gubatron/workspace.frostwire/frostwire-desktop/src/com/frostwire/gui/bittorrent/BTDownloadMediatorAdvancedMenuFactory.java:517
 msgid "Edit trackers"
-msgstr "Editare trakere"
+msgstr "Editare trackere"
 
 #. columns
 #. rows
@@ -3206,8 +3206,8 @@ msgid ""
 "file and are online."
 msgstr ""
 "Puteți sorta rezultatele căutării apăsând pe o coloană. Cea mai utilă "
-"coloană de sortat este coloana 'Contribuiri' dacă ați căutat un torrent, "
-"Contribuiri reprezintă un număr aproximativ de computere care au fișierul "
+"coloană de sortat este coloana 'Contribuitori' dacă ați căutat un torrent, "
+"Contribuitorii reprezintă un număr aproximativ de computere care au fișierul "
 "întreg și sunt online."
 
 #: /Users/gubatron/workspace.frostwire/frostwire-desktop/src/com/limegroup/gnutella/gui/TipOfTheDayMessages.java:25
@@ -5297,3 +5297,4 @@ msgstr "Sfaturi avansate"
 #: /Users/gubatron/workspace.frostwire/frostwire-desktop/src/com/limegroup/gnutella/gui/tables/ColumnSelectionMenu.java:189
 msgid "You cannot turn off all columns."
 msgstr "Nu puteți închide toate coloanele."
+
